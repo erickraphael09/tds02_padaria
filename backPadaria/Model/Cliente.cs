@@ -38,6 +38,7 @@ namespace backPadaria.Model
         public void AdicionarPontos(int pontos)
         {
             this.pontos+=pontos; 
+            // teste
         }
     }
 }
