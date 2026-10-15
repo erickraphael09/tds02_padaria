@@ -31,7 +31,7 @@ namespace backPadaria
 
                 }catch (MySqlException ex)
                 {
-                    Console.WriteLine("Erro ao connectar no banco de dados");
+                    Console.WriteLine("Erro ao connecta no banco de dados");
                     Console.WriteLine(ex.Message);
                 }
 
