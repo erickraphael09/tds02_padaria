@@ -43,25 +43,99 @@ namespace backPadaria
             //    Console.WriteLine("Cliente deletado com sucesso!");
             //}
 
-            List<Cliente> clientes = Cliente.ListarTodos();
+            //List<Cliente> clientes = Cliente.ListarTodos();
 
-            foreach (Cliente cliente in clientes)
-            {
-                Console.WriteLine("-------------------------");
+            //foreach (Cliente cliente in clientes)
+            //{
+            //    Console.WriteLine("-------------------------");
 
-                Console.WriteLine($"ID {cliente.Id}");
-                Console.WriteLine($"Nome: {cliente.Nome}");
-                Console.WriteLine($"CPF: {cliente.Cpf}");
-                Console.WriteLine($"Telefone: {cliente.Telefone}");
-                Console.WriteLine($"Endereço: {cliente.Endereco}");
-                Console.WriteLine($"Pontos: {cliente.Pontos}");
+            //    Console.WriteLine($"ID {cliente.Id}");
+            //    Console.WriteLine($"Nome: {cliente.Nome}");
+            //    Console.WriteLine($"CPF: {cliente.Cpf}");
+            //    Console.WriteLine($"Telefone: {cliente.Telefone}");
+            //    Console.WriteLine($"Endereço: {cliente.Endereco}");
+            //    Console.WriteLine($"Pontos: {cliente.Pontos}");
 
-                Console.WriteLine("-------------------------");
+            //    Console.WriteLine("-------------------------");
 
 
-            }
+            //}
+
+            //Cliente? cli01 = Cliente.listarPorId(2);
+
+            //if (cli01 != null)
+            //{
+            //    Console.WriteLine("----------------");
+
+
+            //    Console.WriteLine($"ID {cli01.Id}");
+            //    Console.WriteLine($"Nome: {cli01.Nome}");
+            //    Console.WriteLine($"CPF: {cli01.Cpf}");
+            //    Console.WriteLine($"Telefone: {cli01.Telefone}");
+            //    Console.WriteLine($"Endereço: {cli01.Endereco}");
+            //    Console.WriteLine($"Pontos: {cli01.Pontos}");
+
+            //    Console.WriteLine("--------------");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Cliente não foi encontrado.");
+            //}
+
+            //Cliente? meuCliente = Cliente.listarPorId(2);
+
+            //if(meuCliente != null)
+            //{
+            //    meuCliente.Endereco = "Rua Barão de Alagoas, 171";
+            //    meuCliente.Telefone = "1197747-8585";
+
+            //    int resultado = Cliente.Atualizar(meuCliente);
+
+            //    if (resultado > 0)
+            //    {
+            //        Console.WriteLine("Cliente atualizado com sucesso!");
+            //    }
+
             
+
+            Console.WriteLine("Digite o nome do funcionario: ");
+            string nomeFuncionario = Console.ReadLine();
+
+            Console.WriteLine("Digite o cpf do funcionario: ");
+            string cpfFuncionario = Console.ReadLine();
+
+            Console.WriteLine("Digite o telefone do funcionario: ");
+            string cargoFuncionario = Console.ReadLine();
+
+
+
+
+            Cliente cliente1 = new Funcionario(
+                nome: nomeFuncionario,
+                cpf: cpfFuncionario,
+                cargo: cargoFuncionario,
+                );
+       
+           
+          
+          //Funcionario.Inserir(funcionario1);
+
+            
+
+          //  Funcionario clienteParaDeletar = new Funcionario(2);
+
+          // if (Cliente.Deletar(FuncionarioParaDeletar) > 1)
+          // {
+          //    Console.WriteLine("Deu bom não.");
+          // }
+          // else
+          //  {
+          //      Console.WriteLine("Cliente deletado com sucesso!");
+          //  }
+
+
+
 
         }
     }
-}
+    }
