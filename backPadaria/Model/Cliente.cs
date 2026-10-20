@@ -312,6 +312,10 @@ namespace backPadaria.Model
 
         }
 
+        internal static void Inserir(Cliente cliente1)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }
