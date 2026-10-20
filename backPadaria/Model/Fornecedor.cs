@@ -8,5 +8,15 @@ namespace backPadaria.Model
 {
     internal class Fornecedor
     {
+        private int id;
+
+        private string nome;
+
+        private string Cnpj;
+
+        private string telefone;
+
+
+        public int ID { get { return id; } set {
     }
 }
