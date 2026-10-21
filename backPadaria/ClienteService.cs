@@ -1,8 +1,10 @@
 ﻿using backPadaria.Model;
+using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -55,6 +57,14 @@ namespace backPadaria.Service
 
                         case "4": // Atualizar
                             atualizar();
+                            break;
+
+                        case "5": // Deletar
+                            excluirClienteMenu();
+                            break;
+
+                            case "6": // Excluir cliente
+                            excluirClienteMenu();
                             break;
 
                     }
@@ -139,7 +149,7 @@ namespace backPadaria.Service
         private static void buscarClientePeloId()
         {
             Console.WriteLine("------ BUSCAR CLIENTE PELO ID ----- ");
-            Console.WriteLine("Digite o ID do cliente: ");
+            Console.WriteLine("Digite o ID do cliente:");
             int idCliente = int.Parse(Console.ReadLine());
             Cliente? clienteEncontrado = Cliente.listarPorId(idCliente);
             if (clienteEncontrado != null)
@@ -154,7 +164,7 @@ namespace backPadaria.Service
             Console.ReadKey();
             Console.Clear();
         }
-
+        
         private static void atualizar()
         {
             Console.WriteLine("------ ATUALIZAR CLIENTE ----- ");
@@ -190,13 +200,90 @@ namespace backPadaria.Service
             Console.ReadKey();
             Console.Clear();
         }
-            private static void deletar 
+
+        private static void excluirClienteMenu()
+        {
+            Console.WriteLine("------ EXCLUIR CLIENTE POR ID ----- ");
+            Console.WriteLine("Digite o id do cliente que deseja excluir");
+
+            int idBusca = 0;
+            int.TryParse(Console.ReadLine(), out idBusca);
+
+
+
+            Cliente? clienteParaExcluir = Cliente.listarPorId(idBusca);
+
+            if (clienteParaExcluir != null)
+            {
+                Cliente.Deletar(clienteParaExcluir);
+                Console.WriteLine("Cliente excluído com sucesso");
+            }
+            else
+            {
+
+                Console.WriteLine("Cliente não encontrado");
+
+            }
+
+            Console.ReadKey();
+
+        } 
+
+        private static void ExibirPotuacaoClienteMenu()
+        {
+            Console.WriteLine("------ EXIBIR PONTUAÇÃO ----- ");
+            Console.WriteLine("Digite o id do cliente: ");
+
+            int idConsole;
+
+            int.TryParse(Console.ReadLine(), out idConsole);
+
+            Cliente? clienteBusca = Cliente.listarPorId(idConsole);
+
+            if (clienteBusca == null)
+            {
+
+                Console.WriteLine("Cliente não encontrado");
+
+            }
+            else
+            {
+
+                Console.WriteLine($"ID: {clienteBusca.Id} " +
+                    $"\nNome {clienteBusca.Nome} " +
+                    $"\nCPF: {clienteBusca.Cpf} " +
+                    $"\nPontos: {clienteBusca.Pontos} ");
+
+
+            }
+
+            Console.WriteLine("\nPressione uma tecla para continuar...");
+            Console.ReadKey();
+
+
+
+
+        }//
 
 
 
 
 
 
-        }
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
 }
+    

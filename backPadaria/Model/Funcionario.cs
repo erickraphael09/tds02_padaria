@@ -17,7 +17,7 @@ namespace backPadaria.Model
 
         private string cargo;    
 
-        public int Id { get => id; set => id = value; }
+        public int Id { get => id; set =>  id = value; }
 
         public string Nome { get => nome; set => nome = value; }
 

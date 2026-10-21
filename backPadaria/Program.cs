@@ -124,8 +124,9 @@ namespace backPadaria
 
         //Funcionario.Inserir(funcionario1);
 
+        ////////////////////////////////////////////////////////////////////////
 
-        //Funcionario funcionarioParaDeletar = new Funcionario(3);
+        ///Funcionario funcionarioParaDeletar = new Funcionario(3);
 
         //if (Funcionario.Deletar(funcionarioParaDeletar) > 1)
         //{
@@ -136,23 +137,22 @@ namespace backPadaria
         //    Console.WriteLine("Cliente deletado com sucesso!");
         //}
 
+        /////////////////////////////////////////////////////////////////////
 
         //List<Funcionario> funcionarios = Funcionario.ListarTodos();
 
-        //foreach (Funcionario funcionario in funcionario)
+        //foreach (Funcionario funcionarios in Funcionario)
         //{
         //    Console.WriteLine("-------------------------");
 
-        //    Console.WriteLine($"ID {funcionario.Id}");
-        //    Console.WriteLine($"Nome: {funcionario.Nome}");
-        //    Console.WriteLine($"CPF: {funcionario.Cpf}");
+        //    Console.WriteLine($"ID {funcionarios.Id}");
+        //    Console.WriteLine($"Nome: {funcionarios.Nome}");
+        //    Console.WriteLine($"CPF: {funcionarios.Cpf}");
+        //    Console.WriteLine($"Cargo: {funcionarios.Endereco}");
 
+        /////////////////////////////////////////////////////////////////
 
-        //    Console.WriteLine($"Cargo: {funcionario.Endereco}");
-
-
-
-        //    Console.WriteLine("-------------------------");
+//        Console.WriteLine("-------------------------");
 
 //        Funcionario? cli01 = Funcionario.listarPorId(2);
 
@@ -186,9 +186,9 @@ namespace backPadaria
 //    if (resultado > 0)
 //    {
 //        Console.WriteLine("Funcionario atualizado com sucesso!");
-//    }
+    }
 
 
 }
-}
+
 
