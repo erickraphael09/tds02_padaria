@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 ﻿using backPadaria.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+>>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +16,7 @@ namespace backPadaria
 {
     internal class FuncionarioService
     {
+<<<<<<< HEAD
         public static void menuCliente()
         {
             bool sair = false;
@@ -211,4 +218,9 @@ namespace backPadaria
     }
         
 
+=======
+
+
+    }
+>>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
 }

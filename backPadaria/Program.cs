@@ -124,9 +124,14 @@ namespace backPadaria
 
         //Funcionario.Inserir(funcionario1);
 
+<<<<<<< HEAD
         ////////////////////////////////////////////////////////////////////////
 
         ///Funcionario funcionarioParaDeletar = new Funcionario(3);
+=======
+
+        //Funcionario funcionarioParaDeletar = new Funcionario(3);
+>>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
 
         //if (Funcionario.Deletar(funcionarioParaDeletar) > 1)
         //{
@@ -137,6 +142,7 @@ namespace backPadaria
         //    Console.WriteLine("Cliente deletado com sucesso!");
         //}
 
+<<<<<<< HEAD
         /////////////////////////////////////////////////////////////////////
 
         //List<Funcionario> funcionarios = Funcionario.ListarTodos();
@@ -153,6 +159,25 @@ namespace backPadaria
         /////////////////////////////////////////////////////////////////
 
 //        Console.WriteLine("-------------------------");
+=======
+
+        //List<Funcionario> funcionarios = Funcionario.ListarTodos();
+
+        //foreach (Funcionario funcionario in funcionario)
+        //{
+        //    Console.WriteLine("-------------------------");
+
+        //    Console.WriteLine($"ID {funcionario.Id}");
+        //    Console.WriteLine($"Nome: {funcionario.Nome}");
+        //    Console.WriteLine($"CPF: {funcionario.Cpf}");
+
+
+        //    Console.WriteLine($"Cargo: {funcionario.Endereco}");
+
+
+
+        //    Console.WriteLine("-------------------------");
+>>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
 
 //        Funcionario? cli01 = Funcionario.listarPorId(2);
 
@@ -180,9 +205,20 @@ namespace backPadaria
 //{
 //    meuFuncionario.Cargo = "Atendimento";
 //    meuFuncionario.Cpf = "57977478585";
+<<<<<<< HEAD
+=======
 
 //    int resultado = Funcionario.Atualizar(meuFuncionario);
 
+//    if (resultado > 0)
+//    {
+//        Console.WriteLine("Funcionario atualizado com sucesso!");
+//    }
+>>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
+
+//    int resultado = Funcionario.Atualizar(meuFuncionario);
+
+<<<<<<< HEAD
 //    if (resultado > 0)
 //    {
 //        Console.WriteLine("Funcionario atualizado com sucesso!");
@@ -192,3 +228,8 @@ namespace backPadaria
 }
 
 
+=======
+}
+}
+
+>>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
