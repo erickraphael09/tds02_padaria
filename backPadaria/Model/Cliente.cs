@@ -238,9 +238,10 @@ namespace backPadaria.Model
 
                 Cliente cliente = null;
 
-                while (reader.Read()){
+                while (reader.Read())
+                {
 
-                 // Extrai os dados do reader e valida os campos
+                    // Extrai os dados do reader e valida os campos
                     int idBanco = reader.GetInt32("id");
 
                     string nome = ValidarCampo(reader["Nome"]);
@@ -255,7 +256,7 @@ namespace backPadaria.Model
 
                 }
 
-                return cliente; 
+                return cliente;
 
             }
         }
@@ -312,11 +313,10 @@ namespace backPadaria.Model
 
         }
 
-        internal static void Inserir(Cliente cliente1)
-        {
-            throw new NotImplementedException();
-        }
     }
-
 }
+
+
+
+
 

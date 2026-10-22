@@ -1,16 +1,10 @@
 ﻿using backPadaria.Model;
-<<<<<<< HEAD
 using MySqlConnector;
-=======
->>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
-<<<<<<< HEAD
 using System.Security.Cryptography.X509Certificates;
-=======
->>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
 using System.Text;
 using System.Threading.Tasks;
 
@@ -65,7 +59,7 @@ namespace backPadaria.Service
                             atualizar();
                             break;
 
-<<<<<<< HEAD
+
                         case "5": // Deletar
                             excluirClienteMenu();
                             break;
@@ -74,8 +68,7 @@ namespace backPadaria.Service
                             excluirClienteMenu();
                             break;
 
-=======
->>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
+
                     }
 
 
@@ -92,7 +85,7 @@ namespace backPadaria.Service
 
 
 
-        } // FIM MENU
+        } 
 
         private static void cadastrarClienteMenu()
         {
@@ -158,11 +151,11 @@ namespace backPadaria.Service
         private static void buscarClientePeloId()
         {
             Console.WriteLine("------ BUSCAR CLIENTE PELO ID ----- ");
-<<<<<<< HEAD
+
             Console.WriteLine("Digite o ID do cliente:");
-=======
+
             Console.WriteLine("Digite o ID do cliente: ");
->>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
+
             int idCliente = int.Parse(Console.ReadLine());
             Cliente? clienteEncontrado = Cliente.listarPorId(idCliente);
             if (clienteEncontrado != null)
@@ -177,11 +170,7 @@ namespace backPadaria.Service
             Console.ReadKey();
             Console.Clear();
         }
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
         private static void atualizar()
         {
             Console.WriteLine("------ ATUALIZAR CLIENTE ----- ");
@@ -217,7 +206,7 @@ namespace backPadaria.Service
             Console.ReadKey();
             Console.Clear();
         }
-<<<<<<< HEAD
+
 
         private static void excluirClienteMenu()
         {
@@ -281,7 +270,7 @@ namespace backPadaria.Service
 
 
 
-        }//
+        }
 
 
 
@@ -290,16 +279,13 @@ namespace backPadaria.Service
 
 
 
-=======
-            private static void deletar 
->>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
 
 
 
 
 
 
-<<<<<<< HEAD
+
     }
 
 
@@ -309,8 +295,5 @@ namespace backPadaria.Service
 
 }
     
-=======
-        }
-    }
-}
->>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
+        
+

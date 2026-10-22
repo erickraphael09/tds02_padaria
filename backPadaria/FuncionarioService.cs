@@ -1,14 +1,11 @@
-<<<<<<< HEAD
 ﻿using backPadaria.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
-=======
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
->>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,7 +13,7 @@ namespace backPadaria
 {
     internal class FuncionarioService
     {
-<<<<<<< HEAD
+
         public static void menuCliente()
         {
             bool sair = false;
@@ -100,11 +97,6 @@ namespace backPadaria
             Console.Clear();
 
             if (resultadoInsert > 0) Console.WriteLine("Funcionario cadastrado com sucesso!!");
-
-             
-
-
-
         }
         public static void listarFuncionario()
         {
@@ -125,7 +117,6 @@ namespace backPadaria
                     Console.WriteLine($"ID: {funcionarios.Id} | Nome {funcionarios.Nome} | CPF: {funcionarios.Cpf}| Cargo: {funcionarios.Cargo} ");
                 }
             }
-
             Console.WriteLine("\nPressione uma tecla para continuar...");
             Console.ReadKey();
             Console.Clear();
@@ -191,8 +182,6 @@ namespace backPadaria
             int idBusca = 0;
             int.TryParse(Console.ReadLine(), out idBusca);
 
-
-
             Funcionario? FuncionarioParaExcluir = Funcionario.listarPorId(idBusca);
 
             if (FuncionarioParaExcluir != null)
@@ -202,25 +191,13 @@ namespace backPadaria
             }
             else
             {
-
-                Console.WriteLine("Funcionario não encontrado");
-
+               Console.WriteLine("Funcionario não encontrado");
             }
 
             Console.ReadKey();
 
-        } //
-
-
-
-
-
+        } 
     }
-        
-
-=======
-
-
-    }
->>>>>>> e06780e54ce42af2772df3e0aa8270fd40d3bc70
 }
+
+

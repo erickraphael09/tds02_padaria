@@ -50,8 +50,9 @@ namespace backPadaria.Model
             this.cargo = cargo;
         }
 
-        public static void Inserir(Funcionario funcionario)
+        public static int Inserir(Funcionario funcionario)
         {
+            return Funcionario.Inserir(funcionario.Id);
             string sql = "INSERT INTO `Funcionario` (`nome`, `cpf`, `cargo`) VALUES (@nome, @cpf, @cargo)";
 
             using (var cmd = new MySqlCommand(sql))
