@@ -8,5 +8,6 @@ namespace backPadaria.Model
 {
     internal class Compra
     {
+        
     }
 }

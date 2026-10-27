@@ -36,7 +36,7 @@ namespace backPadaria.Model
 
         public ProdFabricado(string DescricaoProducao)
         {
-            this.produtoId = produtoId
+            this.produtoId = produtoId;
             this.DescricaoProducao = DescricaoProducao;
 
 
